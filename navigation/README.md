@@ -21,3 +21,6 @@
               app:defaultNavHost="true" />
 5.最重要的是思想上的东西:
 android加载页面的基本单位是activity, 而fragment从概念上来说可以是组成activity的部分,所以不管怎么说MainActivity.kt这个类还有相对应的activity_main.xml这两个文件要有, 因为MainActivity.kt是入口点, 而我们现在想用navigation来组织所有的fragments,因此activity_main.xml中加载的就是"androidx.navigation.fragment.NavHostFragment",而它用的是res/navigation/navigation.xml这个文件,因此后面所有的布局就都放在navigation.xml这个文件中进行了.
+
+
+*.options menu和drawer也是这节的内容,但现在还理解不太好,后面再更新吧
